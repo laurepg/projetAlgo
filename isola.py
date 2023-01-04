@@ -356,7 +356,7 @@ def faireTour(plateau, tabPions, NL, NC, choixAdvers):
         # Rendre l'ancienne cases non-occupée
         plateau[tabPions[i]['positionNL']-1][tabPions[i]['positionNC']-1]['occupee'] = 0
         tabPions[i] = pion
-        # Rendre la case actuelle ocucupée
+        # Rendre la case actuelle occupée
         plateau[pion['positionNL']-1][pion['positionNC']-1]['occupee'] = i+1
 
         afficherPlateau(plateau, NL, NC)
@@ -390,7 +390,7 @@ def faireTour(plateau, tabPions, NL, NC, choixAdvers):
 
         print(f"Le joueur 2 est sur la case ({tabPions[i]['positionNL']},{tabPions[i]['positionNC']}).")
 
-        # Vérifier les choix possbles de l'ordinateur
+        # Vérifier les choix possibles de l'ordinateur
         #afficherCaseDispo(caseDispon, nbCaseDispo)
         alea = generAlea(nbCaseDispo-1)
         pion = caseDispon[alea]
